@@ -2,17 +2,18 @@
   "name": "cse341",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mayhem-roberts/CSE341.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Meagan Roberts",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mayhem-roberts/CSE341/issues"
