@@ -1,6 +1,7 @@
 myName = (req, res) => {
     const data =
       'Meagan Roberts';
+    // status code 200 means success so the object is sent
     res.status(200).send(data);
   };
 
