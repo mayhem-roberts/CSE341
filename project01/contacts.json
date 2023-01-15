@@ -1,0 +1,23 @@
+{
+    "contact": {
+        "firstName": "Meagan",
+        "lastNsme": "Roberts",
+        "email": "rob12088@byui.edu",
+        "favoriteColor": "Orange",
+        "birthday": "11/10/93"
+    },
+    "contact2": {
+        "firstName": "Emily",
+        "lastNsme": "DeCato",
+        "email": "emilydecato@gmail.com",
+        "favoriteColor": "Black",
+        "birthday": "12/28/90"
+    },
+    "contact3": {
+        "firstName": "Devin",
+        "lastNsme": "Roberts",
+        "email": "roberts.devinj@gmail.com",
+        "favoriteColor": "Purple",
+        "birthday": "07/29/87"
+    }
+}
