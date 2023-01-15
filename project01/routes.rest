@@ -1,0 +1,20 @@
+// LOCALHOST 
+### 
+GET http://localhost:3000/contacts 
+### 
+GET http://localhost:3000/contacts/63c348db248373eae5a00e29 
+### 
+GET http://localhost:3000/contacts/63c3494c248373eae5a00e2a
+### 
+GET http://localhost:3000/contacts/63c34978248373eae5a00e2b
+
+
+// RENDER
+### 
+GET https://mayhem-roberts-341-project01.onrender.com/contacts 
+### 
+GET https://mayhem-roberts-341-project01.onrender.com/contacts/63c348db248373eae5a00e29 
+### 
+GET https://mayhem-roberts-341-project01.onrender.com/contacts/63c3494c248373eae5a00e2a
+### 
+GET https://mayhem-roberts-341-project01.onrender.com/contacts/63c34978248373eae5a00e2b
