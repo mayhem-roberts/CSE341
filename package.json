@@ -1,0 +1,20 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "root folder CSE341",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node /project01/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayhem-roberts/CSE341.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayhem-roberts/CSE341/issues"
+  },
+  "homepage": "https://github.com/mayhem-roberts/CSE341#readme"
+}
