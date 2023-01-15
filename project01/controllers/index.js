@@ -11,6 +11,4 @@ familyName = (req, res) => {
     res.status(200).send(data);
   };
   
-  module.exports = {
-    myName, familyName,
-  };
+  module.exports = { myName, familyName, };
