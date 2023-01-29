@@ -5,15 +5,23 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://mayhem-roberts-341-project01.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
-    "/contacts/": {
+    "/api-docs": {
       "get": {
         "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/contacts/": {
+      "get": {
+        "summary": "return all contacts from db",
+        "description": "return all contacts from db",
         "produces": [
           "application/json"
         ],
@@ -25,7 +33,8 @@
         }
       },
       "post": {
-        "description": "",
+        "summary": "add new contact to db",
+        "description": "add new contact to db",
         "parameters": [
           {
             "name": "body",
@@ -64,7 +73,8 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "",
+        "summary": "return all contact from db using id",
+        "description": "return all contact from db using id",
         "produces": [
           "application/json"
         ],
@@ -83,7 +93,8 @@
         }
       },
       "put": {
-        "description": "",
+        "summary": "update contact in db using id",
+        "description": "update contact in db using id",
         "parameters": [
           {
             "name": "id",
@@ -126,7 +137,8 @@
         }
       },
       "delete": {
-        "description": "",
+        "summary": "delete contact in db using id",
+        "description": "delete contact in db using id",
         "parameters": [
           {
             "name": "id",
