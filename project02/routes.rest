@@ -1,12 +1,12 @@
 // LOCALHOST 
 ### 
-GET http://localhost:3000/books 
+GET http://localhost:8080/books 
 
 ### 
-GET http://localhost:3000/books/63df508aefc8eb416be3b44a
+GET http://localhost:8080/books/63df508aefc8eb416be3b44a
 
 ### 
-POST http://localhost:3000/books HTTP/1.1
+POST http://localhost:8080/books HTTP/1.1
 Content-Type: application/json
 
 {
@@ -22,8 +22,22 @@ Content-Type: application/json
 
 // RENDER ----------------------------------------------------------------------------------------------------------------
 ### 
-GET https://mayhem-roberts-341-project01.onrender.com/books 
+GET https://mayhem-roberts-341-project02.onrender.com/books 
 
 ### 
-GET https://mayhem-roberts-341-project01.onrender.com/books/63df508aefc8eb416be3b44a
+GET https://mayhem-roberts-341-project02.onrender.com/books/63df508aefc8eb416be3b44a
 
+### 
+POST https://mayhem-roberts-341-project02.onrender.com/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "author": "Chinua Achebe",
+    "country": "Nigeria",
+    "imageLink": "images/things-fall-apart.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
+    "pages": 209,
+    "title": "Things Fall Apart",
+    "year": 1958
+}
