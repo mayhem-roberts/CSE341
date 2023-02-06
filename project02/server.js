@@ -7,6 +7,10 @@ const app = express();
 
 app
     .use(bodayParser.json())
+    .use((req, res, next) => {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+      })
     .use('/', require('./routes'));
 
 mongodb.initDb((err) => {

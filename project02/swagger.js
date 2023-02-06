@@ -5,11 +5,8 @@ const doc = {
     title: 'My Books API',
     description: 'Get, Post, Put and Delete to mongodb Projects02 books collection',
   },
-  host: 'localhost:8080',
-  schemes: ['http'],
-
-  //host: 'mayhem-roberts-341-project02.onrender.com',
-  //schemes: ['https'],
+  host: 'mayhem-roberts-341-project02.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
