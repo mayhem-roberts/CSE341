@@ -32,7 +32,8 @@
         }
       },
       "post": {
-        "description": "",
+        "summary": "add new book to db",
+        "description": "add new book to db",
         "parameters": [
           {
             "name": "body",
@@ -96,6 +97,45 @@
           "200": {
             "description": "OK"
           }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "books": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string",
+          "example": "Dante Alighieri"
+        },
+        "country": {
+          "type": "string",
+          "example": "Italy"
+        },
+        "imageLink": {
+          "type": "string",
+          "example": "images/the-divine-comedy.jpg"
+        },
+        "language": {
+          "type": "string",
+          "example": "Italian"
+        },
+        "link": {
+          "type": "string",
+          "example": "https://en.wikipedia.org/wiki/Divine_Comedy\n"
+        },
+        "pages": {
+          "type": "number",
+          "example": 928
+        },
+        "title": {
+          "type": "string",
+          "example": "The Divine Comedy"
+        },
+        "year": {
+          "type": "number",
+          "example": 1315
         }
       }
     }

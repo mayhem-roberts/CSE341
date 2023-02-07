@@ -7,6 +7,18 @@ const doc = {
   },
   host: 'mayhem-roberts-341-project02.onrender.com',
   schemes: ['https'],
+  definitions: {
+   books: {
+    author: "Dante Alighieri",
+    country: "Italy",
+    imageLink: "images/the-divine-comedy.jpg",
+    language: "Italian",
+    link: "https://en.wikipedia.org/wiki/Divine_Comedy\n",
+    pages: 928,
+    title: "The Divine Comedy",
+    year: 1315
+  }
+}
 };
 
 const outputFile = './swagger.json';

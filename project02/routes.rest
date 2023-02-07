@@ -32,12 +32,12 @@ POST https://mayhem-roberts-341-project02.onrender.com/books HTTP/1.1
 Content-Type: application/json
 
 {
-    "author": "Chinua Achebe",
-    "country": "Nigeria",
-    "imageLink": "images/things-fall-apart.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
-    "pages": 209,
-    "title": "Things Fall Apart",
-    "year": 1958
+    "author": "Unknown",
+    "country": "India/Iran/Iraq/Egypt/Tajikistan",
+    "imageLink": "images/one-thousand-and-one-nights.jpg",
+    "language": "Arabic",
+    "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
+    "pages": 288,
+    "title": "One Thousand and One Nights",
+    "year": 1200
 }
