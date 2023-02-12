@@ -8,16 +8,22 @@ const doc = {
   host: '',
   schemes: [],
   definitions: {
-   books: {
-    author: "Dante Alighieri",
-    country: "Italy",
-    imageLink: "images/the-divine-comedy.jpg",
-    language: "Italian",
-    link: "https://en.wikipedia.org/wiki/Divine_Comedy\n",
-    pages: 928,
-    title: "The Divine Comedy",
-    year: 1315
-  }
+    books: {
+      author: "Dante Alighieri",
+      country: "Italy",
+      imageLink: "images/the-divine-comedy.jpg",
+      language: "Italian",
+      link: "https://en.wikipedia.org/wiki/Divine_Comedy\n",
+      pages: 928,
+      title: "The Divine Comedy",
+      year: 1315
+  },
+    authors: {
+      author: "Rick Riordan",
+      birthday: "06/05/1964",
+      country: "USA",
+      bookCount: 37
+    }
 }
 };
 
