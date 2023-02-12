@@ -18,7 +18,8 @@
     },
     "/books/": {
       "get": {
-        "description": "",
+        "summary": "get all books from db",
+        "description": "get all books from db",
         "produces": [
           "application/json"
         ],
@@ -30,43 +31,9 @@
         }
       },
       "post": {
-        "summary": "add new book to db",
-        "description": "add new book to db",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "author": {
-                  "example": "any"
-                },
-                "country": {
-                  "example": "any"
-                },
-                "imageLink": {
-                  "example": "any"
-                },
-                "language": {
-                  "example": "any"
-                },
-                "link": {
-                  "example": "any"
-                },
-                "pages": {
-                  "example": "any"
-                },
-                "title": {
-                  "example": "any"
-                },
-                "year": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
+        "summary": "update book in db",
+        "description": "update book in db",
+        "parameters": [],
         "responses": {
           "201": {
             "description": "Created"
@@ -79,7 +46,8 @@
     },
     "/books/{id}": {
       "get": {
-        "description": "",
+        "summary": "get a book from db",
+        "description": "get a book from db",
         "produces": [
           "application/json"
         ],
@@ -94,6 +62,136 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "summary": "update book in db by id ",
+        "description": "update book in db by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "delete a book from db",
+        "description": "delete a book from db",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/authors/": {
+      "get": {
+        "summary": "get all authors from db",
+        "description": "get all authors from db",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "summary": "add an author in db",
+        "description": "add an author in db",
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/authors/{id}": {
+      "get": {
+        "summary": "get an author from db",
+        "description": "get an author from db",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "summary": "update an author in db by id ",
+        "description": "update an author in db by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "delete an author from db",
+        "description": "delete an author from db",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
