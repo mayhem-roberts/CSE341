@@ -1,0 +1,12 @@
+
+@authorId = 63e8535befc8eb416b74a2c2
+@bookId = 63df508aefc8eb416be3b448
+
+@host = localhost:8080
+
+### 
+GET http://{{host}}/authors
+
+### 
+GET http://{{host}}/books
+

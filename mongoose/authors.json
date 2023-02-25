@@ -1,0 +1,20 @@
+[
+    {
+    "author": "Jane Austin",
+    "birthday": "12/16/1775",
+    "country": "England",
+    "bookCount": 12
+    },
+    {
+    "author": "Rick Riordan",
+    "birthday": "06/05/1964",
+    "country": "USA",
+    "bookCount": 37
+    },
+    {
+    "author": "J.R.R. Tolkien",
+    "birthday": "01/03/1892",
+    "country": "England",
+    "bookCount": 38
+    }
+]

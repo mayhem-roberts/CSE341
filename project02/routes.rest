@@ -42,27 +42,27 @@ Content-Type: application/json
     "author": "Jane Austen",
     "country": "United Kingdom",
     "imageLink": "images/pride-and-prejudice.jpg",
-    "language": "English",
+    "language": "Eng",
     "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice\n",
     "pages": 226,
     "title": "Pride and Prejudice",
     "year": 1813
 }
 ### 
-PUT http://localhost:8080/authors/63e859a4de52c930a4e50036 HTTP/1.1
+PUT http://localhost:8080/authors/63e87717d7fe56e7dac51946 HTTP/1.1
 Content-Type: application/json
 
 {
     "author": "Rick Riordan",
     "birthday": "06/05/1964",
     "country": "USA",
-    "bookCount": 37
+    "bookCount": 38
 }
 
 ### 
-DELETE http://localhost:8080/books/63e84951c0eec64e66168f42
+DELETE http://localhost:8080/books/63e876f2d7fe56e7dac51945
 ### 
-DELETE http://localhost:8080/authors/63e863b2868968349571fe8e
+DELETE http://localhost:8080/authors/63e87717d7fe56e7dac51946
 
 // RENDER ----------------------------------------------------------------------------------------------------------------
 ### 
@@ -102,4 +102,4 @@ Content-Type: application/json
 }
 
 ### 
-DELETE https://mayhem-roberts-341-project02.onrender.com/books/63e864d2bfff74eac75a3b65
+DELETE https://mayhem-roberts-341-project02.onrender.com/books/63e8774c687ea2a07d6b7b45

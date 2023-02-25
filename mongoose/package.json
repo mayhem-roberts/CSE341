@@ -1,0 +1,45 @@
+{
+  "name": "mongoose",
+  "version": "1.0.0",
+  "description": "CSE 341 Personal Project 02 - utilizing mongoose js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayhem-roberts/CSE341.git"
+  },
+  "author": "Meagan Roberts",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-openid-connect": "^2.12.0",
+    "modules": "^0.4.0",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.9.0",
+    "node": "^18.13.0",
+    "swagger-autogen": "^2.23.0",
+    "swagger-ui-express": "^4.6.0"
+
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "swagger-autogen": "^2.23.0"
+  },
+  "bugs": {
+    "url": "https://github.com/mayhem-roberts/CSE341/issues"
+  },
+  "homepage": "https://github.com/mayhem-roberts/CSE341#readme"
+}
