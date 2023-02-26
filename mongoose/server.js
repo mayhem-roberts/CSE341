@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('./database/connect');
+const bodayParser = require('body-parser');
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
@@ -7,8 +8,14 @@ dotenv.config();
 const PORT = process.env.PORT || 8080;
 
 app
+    .use(bodayParser.json())
+    .use((req, res, next) => {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+      })
     .use(express.json())
     .use("/", require("./routes"))
+    // connect to mongoDB
     .listen(PORT, async () => {
       console.log(`Server is running on port ${PORT}.`);
       try {
