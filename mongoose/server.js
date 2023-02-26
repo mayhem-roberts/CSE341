@@ -1,15 +1,20 @@
 // express
 const express = require('express');
 const app = express();
-const swaggerUI = require("swagger-ui-express");
+
+// routes
 const mongoose = require('./database/connect');
-const { auth } = require('express-openid-connect');
 const swaggerSpec = require('./swagger.json');
+
+// swagger
+const swaggerUI = require("swagger-ui-express");
 
 // env
 const dotenv = require('dotenv');
 dotenv.config();
 
+// oAuth
+const { auth } = require('express-openid-connect');
 const config = {
   authRequired: false,
   auth0Logout: true,
@@ -38,19 +43,6 @@ app
       }
       });
 
-// const db = require("./models");
-// db.mongoose
-//   .connect(db, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })  
-//   .then(() => {
-//     console.log('Connected to the database!');
-//   })
-//   .catch((err) => {
-//     console.log('Cannot connect to the database!', err);
-//     process.exit();
-//   });
 
 
   
