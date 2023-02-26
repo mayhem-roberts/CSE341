@@ -18,7 +18,8 @@
     },
     "/books/": {
       "get": {
-        "description": "",
+        "summary": "get all books from db",
+        "description": "get all books from db",
         "produces": [
           "application/json"
         ],
@@ -30,14 +31,24 @@
         }
       },
       "post": {
-        "description": "",
+        "summary": "update book in db",
+        "description": "update book in db",
         "produces": [
           "text/plain"
         ],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a book",
+            "schema": {
+              "$ref": "#/definitions/books"
+            }
+          }
+        ],
         "responses": {
           "201": {
-            "description": "Created"
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
@@ -50,7 +61,8 @@
     },
     "/books/{id}": {
       "get": {
-        "description": "",
+        "summary": "get a book from db",
+        "description": "get a book from db",
         "produces": [
           "application/json"
         ],
@@ -72,7 +84,8 @@
         }
       },
       "put": {
-        "description": "",
+        "summary": "update book in db by id ",
+        "description": "update book in db by id",
         "produces": [
           "text/plain"
         ],
@@ -82,11 +95,19 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a book",
+            "schema": {
+              "$ref": "#/definitions/books"
+            }
           }
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
@@ -97,7 +118,8 @@
         }
       },
       "delete": {
-        "description": "",
+        "summary": "delete a book from db",
+        "description": "delete a book from db",
         "produces": [
           "text/plain"
         ],
@@ -124,7 +146,8 @@
     },
     "/authors/": {
       "get": {
-        "description": "",
+        "summary": "get all authors from db",
+        "description": "get all authors from db",
         "produces": [
           "application/json"
         ],
@@ -136,14 +159,24 @@
         }
       },
       "post": {
-        "description": "",
+        "summary": "add an author in db",
+        "description": "add an author in db",
         "produces": [
           "text/plain"
         ],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add an author",
+            "schema": {
+              "$ref": "#/definitions/authors"
+            }
+          }
+        ],
         "responses": {
           "201": {
-            "description": "Created"
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
@@ -156,7 +189,8 @@
     },
     "/authors/{id}": {
       "get": {
-        "description": "",
+        "summary": "get an author from db",
+        "description": "get an author from db",
         "produces": [
           "application/json"
         ],
@@ -178,7 +212,8 @@
         }
       },
       "put": {
-        "description": "",
+        "summary": "update an author in db by id ",
+        "description": "update an author in db by id",
         "produces": [
           "text/plain"
         ],
@@ -188,11 +223,19 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Update an author",
+            "schema": {
+              "$ref": "#/definitions/authors"
+            }
           }
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "OK"
           },
           "400": {
             "description": "Bad Request"
@@ -203,7 +246,8 @@
         }
       },
       "delete": {
-        "description": "",
+        "summary": "delete an author from db",
+        "description": "delete an author from db",
         "produces": [
           "text/plain"
         ],

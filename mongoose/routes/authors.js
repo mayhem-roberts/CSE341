@@ -15,10 +15,10 @@ routes.post("/",
 // #swagger.summary = 'add an author in db'
 // #swagger.description = 'add an author in db'
 /* 
-swagger.responses[201] = {description: 'OK'}}}
+#swagger.responses[201] = {description: 'OK'}}}
 */
  /*
-swagger.parameters['obj'] = {
+#swagger.parameters['obj'] = {
     in: 'body',
     description: 'Add an author',
     schema: { $ref: '#/definitions/authors' }} 
@@ -29,10 +29,10 @@ routes.put("/:id",
 // #swagger.summary = 'update an author in db by id '
 // #swagger.description = 'update an author in db by id'
 /* 
-swagger.responses[204] = {description: 'OK'}}}
+#swagger.responses[204] = {description: 'OK'}}}
 */
  /*
-swagger.parameters['obj'] = {
+#swagger.parameters['obj'] = {
     in: 'body',
     description: 'Update an author',
     schema: { $ref: '#/definitions/authors' }} 
