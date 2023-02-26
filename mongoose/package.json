@@ -29,7 +29,6 @@
     "node": "^18.13.0",
     "swagger-autogen": "^2.23.0",
     "swagger-ui-express": "^4.6.0"
-
   },
   "devDependencies": {
     "eslint": "^8.33.0",

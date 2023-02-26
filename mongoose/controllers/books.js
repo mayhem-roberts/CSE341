@@ -1,11 +1,8 @@
-const { default:mongoose} = require("mongoose");
-const { create } = require("../models/authors.js");
 const ObjectId = require("mongodb").ObjectId;
-
 const Book = require("../models/books.js");
 
 // find and return all books
-async function getBooks(req, res) {
+const getBooks = async (req, res) =>  {
     const result = await Book.find({});
 
     res.setHeader("Content-Type", "application/json");

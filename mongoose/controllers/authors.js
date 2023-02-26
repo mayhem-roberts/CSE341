@@ -1,11 +1,8 @@
-const { default:mongoose} = require("mongoose");
-const { create } = require("../models/authors.js");
 const ObjectId = require("mongodb").ObjectId;
-
 const Author = require("../models/authors.js");
 
 // find and return all authors
-async function getAuthors(req, res) {
+const getAuthors = async (req, res) => {
     const result = await Author.find({});
 
     res.setHeader("Content-Type", "application/json");
@@ -16,7 +13,6 @@ async function getAuthors(req, res) {
 const getAuthor = async (req, res) => {
     const authorId = new ObjectId(req.params.id);
     //console.log(authorId); //new ObjectId("63e8535befc8eb416b74a2c1")
-    //console.log(req.params.id); //63e8535befc8eb416b74a2c1
     try {
         const result = await Author.find({ _id: authorId });
         res.setHeader("Content-Type", "application/json");
